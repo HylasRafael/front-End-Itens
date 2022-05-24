@@ -6,25 +6,6 @@ import { FlatList, ListRenderItem, Text, Button, TouchableOpacity, View } from "
 import { StackParams } from "../../App";
 import Item from "./models/itens"
 
-const  data: Item[] = [
-    {
-        id: 1,
-        nome: 'Hot-Dog',
-        descricao: 'Lanche',
-    },
-
-    {
-        id: 2,
-        nome: 'Pepsi',
-        descricao: 'Refrigerante',
-    },
-
-    {
-        id: 3,
-        nome: 'Maçã',
-        descricao: 'Suco',
-    }
-]
 
 type Props = NativeStackScreenProps < StackParams,'Home' >;
 
