@@ -17,6 +17,7 @@ const ItemScreen: React.FC<Props> = (props) => {
 
     return (
         <View>
+            <Text>{item.nome}</Text>
             <Text>{item.descricao}</Text>
             <Image source={Mercedes} />
             <Button title="Editar" onPress={() => {props.navigation.navigate ('EditarItem', {item:item})}}/>
