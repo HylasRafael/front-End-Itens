@@ -19,7 +19,7 @@ const App: React.FC = () => {
       <NavigationContainer>
           <Stack.Navigator>
               {/*<Stack.Screen name="Onboarding" component={Onboarding} />*/}
-              <Stack.Screen name="Login" component={LoginScreen} />
+              {/*<Stack.Screen name="Login" component={LoginScreen} />*/}
               <Stack.Screen name="Home" component={Home} />
               <Stack.Screen name="ItemScreen" component={ItemScreen} />
               <Stack.Screen name="EditarItem" component={EditarItem} />
