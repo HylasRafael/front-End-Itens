@@ -14,15 +14,15 @@ const EditarItem: React.FC <Props> = (props) => {
     const item = props.route.params.item;
     
     const botaoSalvarPressionado = () => {
-        axios.put(`http://localhost:4000/api/itens/${item.id}`,{
+        axios.put(`http://localhost:4000/api/itens/${item.id}`,{                                    /*Adiciona conteudo editado no banco de dados atraves do caminho definido*/
             nome: nome,
             descricao: descricao
         })
         .then(() => {
-            props.navigation.pop(1);
+            props.navigation.pop(1);                                                                   /*Retorna uma pagina, mais precisamente a pagina de trás */
             
         })
-        .catch(() => {
+        .catch(() => {                                                                              /*Retorna um alerta dizendo que houve erro ao adicionar o item */
             alert('Erro')
         })
     }
@@ -47,3 +47,4 @@ const EditarItem: React.FC <Props> = (props) => {
 };
 
 export default EditarItem
+
