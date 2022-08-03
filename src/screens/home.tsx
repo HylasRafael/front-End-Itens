@@ -33,6 +33,8 @@ type Props = NativeStackScreenProps < StackParams,'Home' >;
 
 const Home: React.FC <Props> = (props) => {
 
+   
+
     const [data, setData] = useState<Item[]>([])
 
     useFocusEffect (useCallback (() => {
@@ -55,9 +57,10 @@ const Home: React.FC <Props> = (props) => {
         }
 
         return (
-        <TouchableOpacity onPress={itemClicado}>
-            <Text>{item.nome}</Text>
-        </TouchableOpacity>
+
+            <TouchableOpacity onPress={itemClicado}>
+                <Text>{item.nome}</Text>
+            </TouchableOpacity>
         )
     }
 
@@ -71,8 +74,12 @@ const Home: React.FC <Props> = (props) => {
             data={data}
             />
              <TouchableOpacity style={style.Button} onPress={adicionarItem}>
-                 <Text>Adicionar</Text>
+                 <Text>Adicionar</Text>                 
              </TouchableOpacity>
+             <TouchableOpacity>
+                 <Text>Contato</Text>
+             </TouchableOpacity>
+
         </View>
     )
 }
